@@ -24,4 +24,12 @@ export interface ProductContextProps {
     Image: (Props: PropsImage) => JSX.Element;
     Buttons: ({ className }: PropsButtons)=> JSX.Element;
       
-  }
+}
+export interface onChangeArgs {
+  product: Product;
+  count: number;
+}
+  
+export interface ProductInCart extends Product {
+  count: number;
+}
