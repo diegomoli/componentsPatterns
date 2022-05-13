@@ -1,0 +1,49 @@
+[
+    {
+        "type":"input",
+        "name":"firstName",
+        "placeholder":"Diego",
+        "label":"First Name",
+        "value":"",
+        "validations":[
+            {"type":"required"},
+            {"type":"minLenght",
+            "value":5
+        }
+        ]
+    },
+    {
+        "type":"input",
+        "name":"LastName",
+        "placeholder":"Molinelli",
+        "label":"Last Name",
+        "value":"",
+        "validations":[
+            {"type":"required"},
+            {"type":"minLenght",
+            "value":5
+        }
+        ]
+    },
+    {
+        "type":"email",
+        "name":"email",
+        "placeholder":"diego@moli.com",
+        "label":"email",
+        "value":"",
+        "validations":[
+            {"type":"required"},
+            {"type":"email"}
+        ]
+    },
+    {
+        "type":"select",
+        "name":"favoriteGames",
+        "label":"Favorite Games",
+        "value":"",
+        "validations":[
+            {"type":"required"}
+        ],
+        "options":[{"id":1,"label":"Super Smash"},{"id":2,"label":"Metal Gear"},{"id":3,"label":"Resident Evil"}]
+    }
+]
